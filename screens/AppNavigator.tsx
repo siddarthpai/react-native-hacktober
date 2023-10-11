@@ -1,12 +1,12 @@
-import React from "react";
-import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import HomeScreen from "./screens/HomeScreen";
-import ProfileScreen from "./screens/ProfileScreen";
+import { NavigationContainer } from "@react-navigation/native";
+import React from "react";
+import HomeScreen from "./HomeScreen";
+import ProfileScreen from "./ProfileScreen";
 
 const Stack = createNativeStackNavigator();
 
-const App: React.FC = () => {
+const AppNavigator: React.FC = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -17,4 +17,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default AppNavigator;
